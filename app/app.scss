@@ -1,8 +1,16 @@
-$dark-red: rgb(216,51,29);
+$dark-red: rgb(216,56,43);
+$gray: rgb(77,77,77);
+
 @font-face {
   font-family: "Helvetica Neue";
   src: url(fonts/HelveticaNeue-MediumCond.otf);
   font-weight: 400;
+}
+@font-face {
+font-family: "Bebas Neue";
+font-style: normal;
+font-weight: normal;
+src: local('Bebas Neue'), url('fonts/BebasNeue.woff') format('woff');
 }
 
 
@@ -14,10 +22,13 @@ body {
   margin: 0 auto;
   max-width: 1500px;
   background-color: white;
+  color: $gray;
+  text-align: center;
 }
 .container {
   margin: 0 auto;
   max-width: 960px;
+  padding: 40px 0;
 }
 div {
   box-sizing: border-box;
@@ -25,6 +36,10 @@ div {
 div[class^="pure-u-"], div[class*=" pure-u-"] {
   padding: 0 10px;
   margin-right: -4px;
+}
+h1, h2, h3, button, input[type="submit"] {
+  font-family: "Bebas Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.5em;
 }
 h1 {
   font-size: 72px;
@@ -34,36 +49,74 @@ h2 {
 }
 h3 {
   font-size: 36px;
-  color: $dark-red;
-  margin-bottom: 0.5em;
+}
+p {
+  font-size: 18px;
+}
+button, input[type="submit"] {
+  background-color: $dark-red;
+  color: white;
+  border: none;
+  box-shadow: none;
 }
 
 .header {
-  background-color: rgba(220,220,220,0.5);
 
-  .header__title {
-    display: inline-block;
+  .container {
+    border-bottom: 1px solid rgba(77,77,77,.2);    
+    padding: 50px 0 30px 0;
   }
-  .header__nav {
-    float: right;
-    ul {
-      li {
-        display: inline-block;
-        margin-left: 10px;
-      }      
-    }
+  .header__button {
+    padding: 10px 50px 5px 50px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 48px;
   }
 }
 .content {
-  section {
-    padding: 20px 0;
 
-    &._top {
-      height: 500px;
-      background-color: rgba(220,220,220,0.2);
+}
+.footer {
+  .container:first-child {
+    border-top: 1px solid rgba(77,77,77,.2);
+  }
+  .footer__icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 0 7px;
+
+    &._facebook {
+      background-color: rgb(60,90,154);
+    }
+    &._twitter {
+      background-color: rgb(45,170,225);
+    }
+    &._mail {
+      background-color: rgb(102,156,65);
+    }
+    i {
+      line-height: 60px;
+      font-size: 36px;
+      color: white;
     }
   }
 }
-.footer {
-  background-color: rgba(220,220,220,0.5);
+.logo-cfu {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.signup-form {
+  input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    vertical-align: text-top;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  input[type="text"] {
+    box-shadow: none;
+    border: 1px solid rgba(77,77,77,.4);
+  }
 }

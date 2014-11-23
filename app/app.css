@@ -3,6 +3,12 @@
   src: url(fonts/HelveticaNeue-MediumCond.otf);
   font-weight: 400; }
 
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bebas Neue'), url('fonts/BebasNeue.woff') format('woff'); }
+
 html {
   background-color: #f8f8f8;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -10,11 +16,14 @@ html {
 body {
   margin: 0 auto;
   max-width: 1500px;
-  background-color: white; }
+  background-color: white;
+  color: #4d4d4d;
+  text-align: center; }
 
 .container {
   margin: 0 auto;
-  max-width: 960px; }
+  max-width: 960px;
+  padding: 40px 0; }
 
 div {
   box-sizing: border-box; }
@@ -23,6 +32,10 @@ div[class^="pure-u-"], div[class*=" pure-u-"] {
   padding: 0 10px;
   margin-right: -4px; }
 
+h1, h2, h3, button, input[type="submit"] {
+  font-family: "Bebas Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.5em; }
+
 h1 {
   font-size: 72px; }
 
@@ -30,25 +43,55 @@ h2 {
   font-size: 48px; }
 
 h3 {
-  font-size: 36px;
-  color: #d8331d;
-  margin-bottom: 0.5em; }
+  font-size: 36px; }
 
-.header {
-  background-color: rgba(220, 220, 220, 0.5); }
-  .header .header__title {
-    display: inline-block; }
-  .header .header__nav {
-    float: right; }
-    .header .header__nav ul li {
-      display: inline-block;
-      margin-left: 10px; }
+p {
+  font-size: 18px; }
 
-.content section {
-  padding: 20px 0; }
-  .content section._top {
-    height: 500px;
-    background-color: rgba(220, 220, 220, 0.2); }
+button, input[type="submit"] {
+  background-color: #d8382b;
+  color: white;
+  border: none;
+  box-shadow: none; }
 
-.footer {
-  background-color: rgba(220, 220, 220, 0.5); }
+.header .container {
+  border-bottom: 1px solid rgba(77, 77, 77, 0.2);
+  padding: 50px 0 30px 0; }
+.header .header__button {
+  padding: 10px 50px 5px 50px;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-size: 48px; }
+
+.footer .container:first-child {
+  border-top: 1px solid rgba(77, 77, 77, 0.2); }
+.footer .footer__icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 0 7px; }
+  .footer .footer__icon._facebook {
+    background-color: #3c5a9a; }
+  .footer .footer__icon._twitter {
+    background-color: #2daae1; }
+  .footer .footer__icon._mail {
+    background-color: #669c41; }
+  .footer .footer__icon i {
+    line-height: 60px;
+    font-size: 36px;
+    color: white; }
+
+.logo-cfu {
+  width: 200px;
+  margin-bottom: 20px; }
+
+.signup-form input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: text-top;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 5px 10px; }
+.signup-form input[type="text"] {
+  box-shadow: none;
+  border: 1px solid rgba(77, 77, 77, 0.4); }
