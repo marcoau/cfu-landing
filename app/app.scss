@@ -1,6 +1,8 @@
 $dark-red: rgb(216,56,43);
 $gray: rgb(77,77,77);
 
+$border: 1px solid rgba(77,77,77,.2);
+
 @font-face {
   font-family: "Helvetica Neue";
   src: url(fonts/HelveticaNeue-MediumCond.otf);
@@ -64,7 +66,7 @@ button, input[type="submit"] {
 .header {
 
   .container {
-    border-bottom: 1px solid rgba(77,77,77,.2);    
+    border-bottom: $border;    
     padding: 50px 0 30px 0;
   }
   .header__button {
@@ -75,11 +77,13 @@ button, input[type="submit"] {
   }
 }
 .content {
-
+  .container:first-child {
+    border-bottom: $border;
+  }
 }
 .footer {
   .container:first-child {
-    border-top: 1px solid rgba(77,77,77,.2);
+    border-top: $border;
   }
   .footer__icon {
     display: inline-block;
