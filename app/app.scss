@@ -119,6 +119,9 @@ button, input[type="submit"] {
   margin-bottom: 20px;
 }
 .signup-form {
+  max-width: 530px;
+  margin: 0 auto;
+
   input {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     vertical-align: text-top;
@@ -130,4 +133,18 @@ button, input[type="submit"] {
     box-shadow: none;
     border: 1px solid rgba(77,77,77,.4);
   }
+  .signup-form-loading {
+    display: none;
+    position: relative;
+    float: right;
+    font-size: 24px;
+    right: 10px;
+    top: 10px;
+    color: $dark-red;
+  }
+}
+.after-signup {
+  display: none;
+  margin-top: 0.5em;
+  color: $dark-red;
 }
