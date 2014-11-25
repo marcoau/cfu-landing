@@ -49,9 +49,6 @@ p {
   font-size: 20px;
   margin: 1em 0; }
 
-a:hover {
-  opacity: 0.5; }
-
 button, input[type="submit"] {
   background-color: #d8382b;
   color: white;
@@ -60,7 +57,7 @@ button, input[type="submit"] {
   cursor: pointer; }
 
 .header .container {
-  border-bottom: 1px solid rgba(77, 77, 77, 0.2);
+  border-bottom: none;
   padding: 50px 0 30px 0; }
 .header .header__button {
   padding: 10px 50px 5px 50px;
@@ -69,26 +66,28 @@ button, input[type="submit"] {
   font-size: 48px; }
 
 .content .container:first-child {
-  border-bottom: 1px solid rgba(77, 77, 77, 0.2); }
+  border-bottom: none; }
 
-.footer .container:first-child {
-  border-top: 1px solid rgba(77, 77, 77, 0.2); }
-.footer .footer__icon {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  margin: 0 7px; }
-  .footer .footer__icon._facebook {
-    background-color: #3c5a9a; }
-  .footer .footer__icon._twitter {
-    background-color: #2daae1; }
-  .footer .footer__icon._mail {
-    background-color: #669c41; }
-  .footer .footer__icon i {
-    line-height: 60px;
-    font-size: 36px;
-    color: white; }
+.footer {
+  background-color: #4d4d4d; }
+  .footer .container:first-child {
+    border-top: none; }
+  .footer .footer__icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 0 7px; }
+    .footer .footer__icon._facebook {
+      background-color: #3c5a9a; }
+    .footer .footer__icon._twitter {
+      background-color: #2daae1; }
+    .footer .footer__icon._mail {
+      background-color: #669c41; }
+    .footer .footer__icon i {
+      line-height: 60px;
+      font-size: 36px;
+      color: white; }
 
 .logo-cfu {
   width: 200px;
@@ -119,3 +118,32 @@ button, input[type="submit"] {
   display: none;
   margin-top: 0.5em;
   color: #d8382b; }
+
+#vote-for-us {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 10px; }
+
+#tagline-banner {
+  background-size: cover;
+  background-image: url(images/woman-with-iphone.jpg);
+  color: white;
+  text-align: left;
+  padding: 100px 0; }
+
+#tagline-banner p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#signup {
+  background-size: cover;
+  background-image: url(images/signup.jpg);
+  padding: 50px 0 50px 100px; }
+
+#invisiondemo {
+  background-color: #ecf0f1; }
+
+.pull-right {
+  padding-top: 300px;
+  text-align: left;
+  width: 40%; }
